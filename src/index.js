@@ -1,12 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import GridComponent from './GridComponent';
 import * as serviceWorker from './serviceWorker';
 
+  var arr=[];
+  arr = [{
+      EmployeeId: 111, EmployeeName: 'Ankit',Address:"Pune"
+  },
+  {
+      EmployeeId: 222, EmployeeName: 'Mayank',Address:"Pune"
+  },
+  {
+      EmployeeId: 333, EmployeeName: 'Shubham',Address:"Pune"
+  },
+  {
+      EmployeeId: 444, EmployeeName: 'Sarang',Address:"Pune"
+  },
+  {
+      EmployeeId: 555, EmployeeName: 'Shoaib',Address:"Pune"
+  }
+]
+  
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   <GridComponent rowcoll={arr}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
